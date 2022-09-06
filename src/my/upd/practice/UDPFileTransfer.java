@@ -7,7 +7,7 @@ import java.net.*;
 
 public class UDPFileTransfer {
   
-  private String fileName = "sample.mp4";
+  private String fileName = "postgresql-14.5-1-osx.dmg";
   private int serverPort = 32123;
   private InetAddress serverIp = null;
   
@@ -22,7 +22,7 @@ public class UDPFileTransfer {
   
   UDPFileTransfer() {
     try {
-      serverIp = InetAddress.getByName("localhost");
+      serverIp = InetAddress.getByName("172.30.1.16");
       socket = new DatagramSocket();
     } catch (UnknownHostException | SocketException e) {
       e.printStackTrace();
